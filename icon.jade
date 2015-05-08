@@ -1,0 +1,1145 @@
+doctype html
+html(lang='en')
+	head
+		//
+			===
+			This comment should NOT be removed.
+			Charisma v2.0.0
+			Copyright 2012-2014 Muhammad Usman
+			Licensed under the Apache License v2.0
+			http://www.apache.org/licenses/LICENSE-2.0
+			http://usman.it
+			http://twitter.com/halalit_usman
+			===
+		meta(charset='utf-8')
+		|     
+		title Free HTML5 Bootstrap Admin Template
+		|     
+		meta(name='viewport', content='width=device-width, initial-scale=1')
+		|     
+		meta(name='description', content='Charisma, a fully featured, responsive, HTML5, Bootstrap admin template.')
+		|     
+		meta(name='author', content='Muhammad Usman')
+		// The styles
+		link#bs-css(href='css/bootstrap-cerulean.min.css', rel='stylesheet')
+		|     
+		link(href='css/charisma-app.css', rel='stylesheet')
+		|     
+		link(href='bower_components/fullcalendar/dist/fullcalendar.css', rel='stylesheet')
+		|     
+		link(href='bower_components/fullcalendar/dist/fullcalendar.print.css', rel='stylesheet', media='print')
+		|     
+		link(href='bower_components/chosen/chosen.min.css', rel='stylesheet')
+		|     
+		link(href='bower_components/colorbox/example3/colorbox.css', rel='stylesheet')
+		|     
+		link(href='bower_components/responsive-tables/responsive-tables.css', rel='stylesheet')
+		|     
+		link(href='bower_components/bootstrap-tour/build/css/bootstrap-tour.min.css', rel='stylesheet')
+		|     
+		link(href='css/jquery.noty.css', rel='stylesheet')
+		|     
+		link(href='css/noty_theme_default.css', rel='stylesheet')
+		|     
+		link(href='css/elfinder.min.css', rel='stylesheet')
+		|     
+		link(href='css/elfinder.theme.css', rel='stylesheet')
+		|     
+		link(href='css/jquery.iphone.toggle.css', rel='stylesheet')
+		|     
+		link(href='css/uploadify.css', rel='stylesheet')
+		|     
+		link(href='css/animate.min.css', rel='stylesheet')
+		// jQuery
+		script(src='bower_components/jquery/jquery.min.js')
+		// The HTML5 shim, for IE6-8 support of HTML5 elements
+		//if lt IE 9
+			script(src='http://html5shim.googlecode.com/svn/trunk/html5.js')
+		// The fav icon
+		link(rel='shortcut icon', href='img/favicon.ico')
+	body
+		// topbar starts
+		.navbar.navbar-default(role='navigation')
+			.navbar-inner
+				button.navbar-toggle.pull-left.animated.flip(type='button')
+					span.sr-only Toggle navigation
+					|                 
+					span.icon-bar
+					|                 
+					span.icon-bar
+					|                 
+					span.icon-bar
+				|             
+				a.navbar-brand(href='index.html')
+					img.hidden-xs(alt='Charisma Logo', src='img/logo20.png')
+					|                 
+					span Charisma
+				// user dropdown starts
+				.btn-group.pull-right
+					button.btn.btn-default.dropdown-toggle(data-toggle='dropdown')
+						i.glyphicon.glyphicon-user
+						span.hidden-sm.hidden-xs  admin
+						|                     
+						span.caret
+					|                 
+					ul.dropdown-menu
+						li
+							a(href='#') Profile
+						|                     
+						li.divider
+						|                     
+						li
+							a(href='login.html') Logout
+				// user dropdown ends
+				// theme selector starts
+				.btn-group.pull-right.theme-container.animated.tada
+					button.btn.btn-default.dropdown-toggle(data-toggle='dropdown')
+						i.glyphicon.glyphicon-tint
+						span.hidden-sm.hidden-xs  Change Theme / Skin
+						|                     
+						span.caret
+					|                 
+					ul#themes.dropdown-menu
+						li
+							a(data-value='classic', href='#')
+								i.whitespace
+								|  Classic
+						|                     
+						li
+							a(data-value='cerulean', href='#')
+								i.whitespace
+								|  Cerulean
+						|                     
+						li
+							a(data-value='cyborg', href='#')
+								i.whitespace
+								|  Cyborg
+						|                     
+						li
+							a(data-value='simplex', href='#')
+								i.whitespace
+								|  Simplex
+						|                     
+						li
+							a(data-value='darkly', href='#')
+								i.whitespace
+								|  Darkly
+						|                     
+						li
+							a(data-value='lumen', href='#')
+								i.whitespace
+								|  Lumen
+						|                     
+						li
+							a(data-value='slate', href='#')
+								i.whitespace
+								|  Slate
+						|                     
+						li
+							a(data-value='spacelab', href='#')
+								i.whitespace
+								|  Spacelab
+						|                     
+						li
+							a(data-value='united', href='#')
+								i.whitespace
+								|  United
+				// theme selector ends
+				ul.collapse.navbar-collapse.nav.navbar-nav.top-menu
+					li
+						a(href='#')
+							i.glyphicon.glyphicon-globe
+							|  Visit Site
+					|                 
+					li.dropdown
+						a(href='#', data-toggle='dropdown')
+							i.glyphicon.glyphicon-star
+							|  Dropdown 
+							span.caret
+						|                     
+						ul.dropdown-menu(role='menu')
+							li
+								a(href='#') Action
+							|                         
+							li
+								a(href='#') Another action
+							|                         
+							li
+								a(href='#') Something else here
+							|                         
+							li.divider
+							|                         
+							li
+								a(href='#') Separated link
+							|                         
+							li.divider
+							|                         
+							li
+								a(href='#') One more separated link
+					|                 
+					li
+						form.navbar-search.pull-left
+							input.search-query.form-control.col-md-10(placeholder='Search', name='query', type='text')
+		// topbar ends
+		.ch-container
+			.row
+				// left menu starts
+				.col-sm-2.col-lg-2
+					.sidebar-nav
+						.nav-canvas
+							.nav-sm.nav.nav-stacked
+							|                     
+							ul.nav.nav-pills.nav-stacked.main-menu
+								li.nav-header Main
+								|                         
+								li
+									a.ajax-link(href='index.html')
+										i.glyphicon.glyphicon-home
+										span  Dashboard
+								|                         
+								li
+									a.ajax-link(href='ui.html')
+										i.glyphicon.glyphicon-eye-open
+										span  UI Features
+								|                         
+								li
+									a.ajax-link(href='form.html')
+										i.glyphicon.glyphicon-edit
+										span  Forms
+								|                         
+								li
+									a.ajax-link(href='chart.html')
+										i.glyphicon.glyphicon-list-alt
+										span  Charts
+								|                         
+								li
+									a.ajax-link(href='typography.html')
+										i.glyphicon.glyphicon-font
+										span  Typography
+								|                         
+								li
+									a.ajax-link(href='gallery.html')
+										i.glyphicon.glyphicon-picture
+										span  Gallery
+								|                         
+								li.nav-header.hidden-md Sample Section
+								|                         
+								li
+									a.ajax-link(href='table.html')
+										i.glyphicon.glyphicon-align-justify
+										span  Tables
+								|                         
+								li.accordion
+									a(href='#')
+										i.glyphicon.glyphicon-plus
+										span  Accordion Menu
+									|                             
+									ul.nav.nav-pills.nav-stacked
+										li
+											a(href='#') Child Menu 1
+										|                                 
+										li
+											a(href='#') Child Menu 2
+								|                         
+								li
+									a.ajax-link(href='calendar.html')
+										i.glyphicon.glyphicon-calendar
+										span  Calendar
+								|                         
+								li
+									a.ajax-link(href='grid.html')
+										i.glyphicon.glyphicon-th
+										span  Grid
+								|                         
+								li
+									a(href='tour.html')
+										i.glyphicon.glyphicon-globe
+										span  Tour
+								|                         
+								li
+									a.ajax-link(href='icon.html')
+										i.glyphicon.glyphicon-star
+										span  Icons
+								|                         
+								li
+									a(href='error.html')
+										i.glyphicon.glyphicon-ban-circle
+										span  Error Page
+								|                         
+								li
+									a(href='login.html')
+										i.glyphicon.glyphicon-lock
+										span  Login Page
+							|                     
+							label#for-is-ajax(for='is-ajax')
+								input#is-ajax(type='checkbox')
+								|  Ajax on menu
+				// /span
+				// left menu ends
+				noscript
+					.alert.alert-block.col-md-12
+						h4.alert-heading Warning!
+						|                 
+						p
+							| You need to have 
+							a(href='http://en.wikipedia.org/wiki/JavaScript', target='_blank') JavaScript
+							|                     enabled to use this site.
+				|         
+				#content.col-lg-10.col-sm-10
+					// content starts
+					div
+						ul.breadcrumb
+							li
+								a(href='#') Home
+							|             
+							li
+								a(href='#')  Icons
+					|     
+					.row
+						.box.col-md-12
+							.box-inner
+								.box-header.well
+									h2
+										i.glyphicon.glyphicon-picture
+										|  Icons
+									|         
+									.box-icon
+										a.btn.btn-setting.btn-round.btn-default(href='#')
+											i.glyphicon.glyphicon-cog
+										|             
+										a.btn.btn-minimize.btn-round.btn-default(href='#')
+											i.glyphicon.glyphicon-chevron-up
+										|             
+										a.btn.btn-close.btn-round.btn-default(href='#')
+											i.glyphicon.glyphicon-remove
+								|     
+								.box-content
+									section#icons1
+										.row
+											.col-md-6
+												h3 How to use
+												|             
+												p
+													| Bootstrap uses an 
+													code <i>
+													|  tag for all icons, but they have no case class—only a shared
+													|                 prefix. To use, place the following code just about anywhere:
+												|             
+												pre.prettyprint.linenums.
+													\n<i class="glyphicon glyphicon-search"></i>													
+												|             
+												p
+													span.label-info.label.label-default Heads up!
+													|                 When using beside strings of text, as in buttons or nav links, be sure to leave a space after the
+													|                 
+													code <i>
+													|  tag for proper spacing.
+											|         
+											.col-md-6
+												h3 Use cases
+												|             
+												p Icons are great, but where would one use them? Here are a few ideas:
+												|             
+												ul
+													li As visuals for your sidebar navigation
+													|                 
+													li For a purely icon-driven navigation
+													|                 
+													li For buttons to help convey the meaning of an action
+													|                 
+													li With links to share context on a user's destination
+												|             
+												p
+													| Essentially, anywhere you can put an 
+													code <i>
+													|  tag, you can put an icon.
+										|     
+										h3 Examples
+										|     
+										p
+											| Use them in buttons, button groups for a toolbar, navigation, or prepended form inputs.
+										|     
+										.row
+											.col-md-4
+												div(style='font-size: 50px')
+													h5 Big-Color Icons
+													|                 
+													span
+														i.glyphicon.glyphicon-tint
+													|                 
+													span
+														i.glyphicon.glyphicon-star.yellow
+													|                 
+													span
+														i.glyphicon.glyphicon-calendar.red
+													|                 
+													span
+														i.glyphicon.glyphicon-bell.blue
+													|                 
+													span
+														i.glyphicon.glyphicon-camera.green
+												|             
+												.btn-toolbar
+													.btn-group
+														a.btn.btn-default(href='#')
+															i.glyphicon.glyphicon-align-left
+														|                     
+														a.btn.btn-default(href='#')
+															i.glyphicon.glyphicon-align-center
+														|                     
+														a.btn.btn-default(href='#')
+															i.glyphicon.glyphicon-align-right
+														|                     
+														a.btn.btn-default(href='#')
+															i.glyphicon.glyphicon-align-justify
+													|                 
+													.btn-group
+														a.btn.btn-primary(href='#')
+															i.glyphicon.glyphicon-user.icon-white
+															|  User
+														|                     
+														a.btn.btn-primary.dropdown-toggle(data-toggle='dropdown', href='#')
+															span.caret
+														|                     
+														ul.dropdown-menu
+															li
+																a(href='#')
+																	i.glyphicon.glyphicon-pencil
+																	|  Edit
+															|                         
+															li
+																a(href='#')
+																	i.glyphicon.glyphicon-trash
+																	|  Delete
+															|                         
+															li
+																a(href='#')
+																	i.glyphicon.glyphicon-ban-circle
+																	|  Ban
+															|                         
+															li.divider
+															|                         
+															li
+																a(href='#')
+																	i.i
+																	|  Make admin
+												|             
+												br
+												|             
+												p
+													a.btn.btn-default(href='#')
+														i.glyphicon.glyphicon-refresh
+														|  Refresh
+													|                 
+													a.btn.btn-success(href='#')
+														i.glyphicon.glyphicon-shopping-cart
+														|                     Checkout
+													|                 
+													a.btn.btn-danger(href='#')
+														i.glyphicon.glyphicon-trash
+														|  Delete
+												|             
+												p
+													a.btn.btn-default.btn-lg(href='#')
+														i.glyphicon.glyphicon-comment
+														|  Comment
+													|                 
+													a.btn.btn-default.btn-sm(href='#')
+														i.glyphicon.glyphicon-cog
+														|  Settings
+													|                 
+													a.btn.btn-info.btn-sm(href='#')
+														i.glyphicon.glyphicon-info-sign
+														|  More
+														|                     Info
+											|         
+											.col-md-4
+												.well
+													ul.nav.nav-list
+														li.active
+															a(href='#')
+																i.glyphicon.glyphicon-home
+																|  Home
+														|                     
+														li
+															a(href='#')
+																i.glyphicon.glyphicon-book
+																|  Library
+														|                     
+														li
+															a(href='#')
+																i.glyphicon.glyphicon-pencil
+																|  Applications
+														|                     
+														li
+															a(href='#')
+																i.i
+																|  Misc
+												// /well
+											|         
+											.col-md-4
+												form
+													.form-group
+														label.control-label(for='inputIcon') Email address
+														|                     
+														.input-group.input-group-lg
+															span.input-group-addon
+																i.glyphicon.glyphicon-envelope.red
+															|                         
+															input#inputIcon.form-control(type='text', placeholder='Username')
+										|     
+										.page-header
+											h1 Icons
+										|     
+										.row.bs-icons
+											.col-md-3
+												ul.the-icons
+													li
+														i.glyphicon.glyphicon-glass
+														|  glyphicon glyphicon-glass
+													|                 
+													li
+														i.glyphicon.glyphicon-music
+														|  glyphicon glyphicon-music
+													|                 
+													li
+														i.glyphicon.glyphicon-search
+														|  glyphicon glyphicon-search
+													|                 
+													li
+														i.glyphicon.glyphicon-envelope
+														|  glyphicon glyphicon-envelope
+													|                 
+													li
+														i.glyphicon.glyphicon-heart
+														|  glyphicon glyphicon-heart
+													|                 
+													li
+														i.glyphicon.glyphicon-star
+														|  glyphicon glyphicon-star
+													|                 
+													li
+														i.glyphicon.glyphicon-star-empty
+														|  glyphicon glyphicon-star-empty
+													|                 
+													li
+														i.glyphicon.glyphicon-user
+														|  glyphicon glyphicon-user
+													|                 
+													li
+														i.glyphicon.glyphicon-film
+														|  glyphicon glyphicon-film
+													|                 
+													li
+														i.glyphicon.glyphicon-th-large
+														|  glyphicon glyphicon-th-large
+													|                 
+													li
+														i.glyphicon.glyphicon-th
+														|  glyphicon glyphicon-th
+													|                 
+													li
+														i.glyphicon.glyphicon-th-list
+														|  glyphicon glyphicon-th-list
+													|                 
+													li
+														i.glyphicon.glyphicon-ok
+														|  glyphicon glyphicon-ok
+													|                 
+													li
+														i.glyphicon.glyphicon-remove
+														|  glyphicon glyphicon-remove
+													|                 
+													li
+														i.glyphicon.glyphicon-zoom-in
+														|  glyphicon glyphicon-zoom-in
+													|                 
+													li
+														i.glyphicon.glyphicon-zoom-out
+														|  glyphicon glyphicon-zoom-out
+													|                 
+													li
+														i.glyphicon.glyphicon-off
+														|  glyphicon glyphicon-off
+													|                 
+													li
+														i.glyphicon.glyphicon-signal
+														|  glyphicon glyphicon-signal
+													|                 
+													li
+														i.glyphicon.glyphicon-cog
+														|  glyphicon glyphicon-cog
+													|                 
+													li
+														i.glyphicon.glyphicon-trash
+														|  glyphicon glyphicon-trash
+													|                 
+													li
+														i.glyphicon.glyphicon-home
+														|  glyphicon glyphicon-home
+													|                 
+													li
+														i.glyphicon.glyphicon-file
+														|  glyphicon glyphicon-file
+													|                 
+													li
+														i.glyphicon.glyphicon-time
+														|  glyphicon glyphicon-time
+													|                 
+													li
+														i.glyphicon.glyphicon-road
+														|  glyphicon glyphicon-road
+													|                 
+													li
+														i.glyphicon.glyphicon-download-alt
+														|  glyphicon glyphicon-download-alt
+													|                 
+													li
+														i.glyphicon.glyphicon-download
+														|  glyphicon glyphicon-download
+													|                 
+													li
+														i.glyphicon.glyphicon-upload
+														|  glyphicon glyphicon-upload
+													|                 
+													li
+														i.glyphicon.glyphicon-inbox
+														|  glyphicon glyphicon-inbox
+													|                 
+													li
+														i.glyphicon.glyphicon-play-circle
+														|  glyphicon glyphicon-play-circle
+													|                 
+													li
+														i.glyphicon.glyphicon-repeat
+														|  glyphicon glyphicon-repeat
+													|                 
+													li
+														i.glyphicon.glyphicon-refresh
+														|  glyphicon glyphicon-refresh
+													|                 
+													li
+														i.glyphicon.glyphicon-list-alt
+														|  glyphicon glyphicon-list-alt
+													|                 
+													li
+														i.glyphicon.glyphicon-lock
+														|  glyphicon glyphicon-lock
+													|                 
+													li
+														i.glyphicon.glyphicon-flag
+														|  glyphicon glyphicon-flag
+													|                 
+													li
+														i.glyphicon.glyphicon-headphones
+														|  glyphicon glyphicon-headphones
+											|         
+											.col-md-3
+												ul.the-icons
+													li
+														i.glyphicon.glyphicon-volume-off
+														|  glyphicon glyphicon-volume-off
+													|                 
+													li
+														i.glyphicon.glyphicon-volume-down
+														|  glyphicon glyphicon-volume-down
+													|                 
+													li
+														i.glyphicon.glyphicon-volume-up
+														|  glyphicon glyphicon-volume-up
+													|                 
+													li
+														i.glyphicon.glyphicon-qrcode
+														|  glyphicon glyphicon-qrcode
+													|                 
+													li
+														i.glyphicon.glyphicon-barcode
+														|  glyphicon glyphicon-barcode
+													|                 
+													li
+														i.glyphicon.glyphicon-tag
+														|  glyphicon glyphicon-tag
+													|                 
+													li
+														i.glyphicon.glyphicon-tags
+														|  glyphicon glyphicon-tags
+													|                 
+													li
+														i.glyphicon.glyphicon-book
+														|  glyphicon glyphicon-book
+													|                 
+													li
+														i.glyphicon.glyphicon-bookmark
+														|  glyphicon glyphicon-bookmark
+													|                 
+													li
+														i.glyphicon.glyphicon-print
+														|  glyphicon glyphicon-print
+													|                 
+													li
+														i.glyphicon.glyphicon-camera
+														|  glyphicon glyphicon-camera
+													|                 
+													li
+														i.glyphicon.glyphicon-font
+														|  glyphicon glyphicon-font
+													|                 
+													li
+														i.glyphicon.glyphicon-bold
+														|  glyphicon glyphicon-bold
+													|                 
+													li
+														i.glyphicon.glyphicon-italic
+														|  glyphicon glyphicon-italic
+													|                 
+													li
+														i.glyphicon.glyphicon-text-height
+														|  glyphicon glyphicon-text-height
+													|                 
+													li
+														i.glyphicon.glyphicon-text-width
+														|  glyphicon glyphicon-text-width
+													|                 
+													li
+														i.glyphicon.glyphicon-align-left
+														|  glyphicon glyphicon-align-left
+													|                 
+													li
+														i.glyphicon.glyphicon-align-center
+														|  glyphicon glyphicon-align-center
+													|                 
+													li
+														i.glyphicon.glyphicon-align-right
+														|  glyphicon glyphicon-align-right
+													|                 
+													li
+														i.glyphicon.glyphicon-align-justify
+														|  glyphicon glyphicon-align-justify
+													|                 
+													li
+														i.glyphicon.glyphicon-list
+														|  glyphicon glyphicon-list
+													|                 
+													li
+														i.glyphicon.glyphicon-indent-left
+														|  glyphicon glyphicon-indent-left
+													|                 
+													li
+														i.glyphicon.glyphicon-indent-right
+														|  glyphicon glyphicon-indent-right
+													|                 
+													li
+														i.glyphicon.glyphicon-facetime-video
+														|  glyphicon glyphicon-facetime-video
+													|                 
+													li
+														i.glyphicon.glyphicon-picture
+														|  glyphicon glyphicon-picture
+													|                 
+													li
+														i.glyphicon.glyphicon-pencil
+														|  glyphicon glyphicon-pencil
+													|                 
+													li
+														i.glyphicon.glyphicon-map-marker
+														|  glyphicon glyphicon-map-marker
+													|                 
+													li
+														i.glyphicon.glyphicon-adjust
+														|  glyphicon glyphicon-adjust
+													|                 
+													li
+														i.glyphicon.glyphicon-tint
+														|  glyphicon glyphicon-tint
+													|                 
+													li
+														i.glyphicon.glyphicon-edit
+														|  glyphicon glyphicon-edit
+													|                 
+													li
+														i.glyphicon.glyphicon-share
+														|  glyphicon glyphicon-share
+													|                 
+													li
+														i.glyphicon.glyphicon-check
+														|  glyphicon glyphicon-check
+													|                 
+													li
+														i.glyphicon.glyphicon-move
+														|  glyphicon glyphicon-move
+													|                 
+													li
+														i.glyphicon.glyphicon-step-backward
+														|  glyphicon glyphicon-step-backward
+													|                 
+													li
+														i.glyphicon.glyphicon-fast-backward
+														|  glyphicon glyphicon-fast-backward
+											|         
+											.col-md-3
+												ul.the-icons
+													li
+														i.glyphicon.glyphicon-backward
+														|  glyphicon glyphicon-backward
+													|                 
+													li
+														i.glyphicon.glyphicon-play
+														|  glyphicon glyphicon-play
+													|                 
+													li
+														i.glyphicon.glyphicon-pause
+														|  glyphicon glyphicon-pause
+													|                 
+													li
+														i.glyphicon.glyphicon-stop
+														|  glyphicon glyphicon-stop
+													|                 
+													li
+														i.glyphicon.glyphicon-forward
+														|  glyphicon glyphicon-forward
+													|                 
+													li
+														i.glyphicon.glyphicon-fast-forward
+														|  glyphicon glyphicon-fast-forward
+													|                 
+													li
+														i.glyphicon.glyphicon-step-forward
+														|  glyphicon glyphicon-step-forward
+													|                 
+													li
+														i.glyphicon.glyphicon-eject
+														|  glyphicon glyphicon-eject
+													|                 
+													li
+														i.glyphicon.glyphicon-chevron-left
+														|  glyphicon glyphicon-chevron-left
+													|                 
+													li
+														i.glyphicon.glyphicon-chevron-right
+														|  glyphicon glyphicon-chevron-right
+													|                 
+													li
+														i.glyphicon.glyphicon-plus-sign
+														|  glyphicon glyphicon-plus-sign
+													|                 
+													li
+														i.glyphicon.glyphicon-minus-sign
+														|  glyphicon glyphicon-minus-sign
+													|                 
+													li
+														i.glyphicon.glyphicon-remove-sign
+														|  glyphicon glyphicon-remove-sign
+													|                 
+													li
+														i.glyphicon.glyphicon-ok-sign
+														|  glyphicon glyphicon-ok-sign
+													|                 
+													li
+														i.glyphicon.glyphicon-question-sign
+														|  glyphicon glyphicon-question-sign
+													|                 
+													li
+														i.glyphicon.glyphicon-info-sign
+														|  glyphicon glyphicon-info-sign
+													|                 
+													li
+														i.glyphicon.glyphicon-screenshot
+														|  glyphicon glyphicon-screenshot
+													|                 
+													li
+														i.glyphicon.glyphicon-remove-circle
+														|  glyphicon glyphicon-remove-circle
+													|                 
+													li
+														i.glyphicon.glyphicon-ok-circle
+														|  glyphicon glyphicon-ok-circle
+													|                 
+													li
+														i.glyphicon.glyphicon-ban-circle
+														|  glyphicon glyphicon-ban-circle
+													|                 
+													li
+														i.glyphicon.glyphicon-arrow-left
+														|  glyphicon glyphicon-arrow-left
+													|                 
+													li
+														i.glyphicon.glyphicon-arrow-right
+														|  glyphicon glyphicon-arrow-right
+													|                 
+													li
+														i.glyphicon.glyphicon-arrow-up
+														|  glyphicon glyphicon-arrow-up
+													|                 
+													li
+														i.glyphicon.glyphicon-arrow-down
+														|  glyphicon glyphicon-arrow-down
+													|                 
+													li
+														i.glyphicon.glyphicon-share-alt
+														|  glyphicon glyphicon-share-alt
+													|                 
+													li
+														i.glyphicon.glyphicon-resize-full
+														|  glyphicon glyphicon-resize-full
+													|                 
+													li
+														i.glyphicon.glyphicon-resize-small
+														|  glyphicon glyphicon-resize-small
+													|                 
+													li
+														i.glyphicon.glyphicon-plus
+														|  glyphicon glyphicon-plus
+													|                 
+													li
+														i.glyphicon.glyphicon-minus
+														|  glyphicon glyphicon-minus
+													|                 
+													li
+														i.glyphicon.glyphicon-asterisk
+														|  glyphicon glyphicon-asterisk
+													|                 
+													li
+														i.glyphicon.glyphicon-exclamation-sign
+														|  glyphicon glyphicon-exclamation-sign
+													|                 
+													li
+														i.glyphicon.glyphicon-gift
+														|  glyphicon glyphicon-gift
+													|                 
+													li
+														i.glyphicon.glyphicon-leaf
+														|  glyphicon glyphicon-leaf
+													|                 
+													li
+														i.glyphicon.glyphicon-fire
+														|  glyphicon glyphicon-fire
+													|                 
+													li
+														i.glyphicon.glyphicon-eye-open
+														|  glyphicon glyphicon-eye-open
+											|         
+											.col-md-3
+												ul.the-icons
+													li
+														i.glyphicon.glyphicon-eye-close
+														|  glyphicon glyphicon-eye-close
+													|                 
+													li
+														i.glyphicon.glyphicon-warning-sign
+														|  glyphicon glyphicon-warning-sign
+													|                 
+													li
+														i.glyphicon.glyphicon-plane
+														|  glyphicon glyphicon-plane
+													|                 
+													li
+														i.glyphicon.glyphicon-calendar
+														|  glyphicon glyphicon-calendar
+													|                 
+													li
+														i.glyphicon.glyphicon-random
+														|  glyphicon glyphicon-random
+													|                 
+													li
+														i.glyphicon.glyphicon-comment
+														|  glyphicon glyphicon-comment
+													|                 
+													li
+														i.glyphicon.glyphicon-magnet
+														|  glyphicon glyphicon-magnet
+													|                 
+													li
+														i.glyphicon.glyphicon-chevron-up
+														|  glyphicon glyphicon-chevron-up
+													|                 
+													li
+														i.glyphicon.glyphicon-chevron-down
+														|  glyphicon glyphicon-chevron-down
+													|                 
+													li
+														i.glyphicon.glyphicon-retweet
+														|  glyphicon glyphicon-retweet
+													|                 
+													li
+														i.glyphicon.glyphicon-shopping-cart
+														|  glyphicon glyphicon-shopping-cart
+													|                 
+													li
+														i.glyphicon.glyphicon-folder-close
+														|  glyphicon glyphicon-folder-close
+													|                 
+													li
+														i.glyphicon.glyphicon-folder-open
+														|  glyphicon glyphicon-folder-open
+													|                 
+													li
+														i.glyphicon.glyphicon-resize-vertical
+														|  glyphicon glyphicon-resize-vertical
+													|                 
+													li
+														i.glyphicon.glyphicon-resize-horizontal
+														|  glyphicon glyphicon-resize-horizontal
+													|                 
+													li
+														i.glyphicon.glyphicon-hdd
+														|  glyphicon glyphicon-hdd
+													|                 
+													li
+														i.glyphicon.glyphicon-bullhorn
+														|  glyphicon glyphicon-bullhorn
+													|                 
+													li
+														i.glyphicon.glyphicon-bell
+														|  glyphicon glyphicon-bell
+													|                 
+													li
+														i.glyphicon.glyphicon-certificate
+														|  glyphicon glyphicon-certificate
+													|                 
+													li
+														i.glyphicon.glyphicon-thumbs-up
+														|  glyphicon glyphicon-thumbs-up
+													|                 
+													li
+														i.glyphicon.glyphicon-thumbs-down
+														|  glyphicon glyphicon-thumbs-down
+													|                 
+													li
+														i.glyphicon.glyphicon-hand-right
+														|  glyphicon glyphicon-hand-right
+													|                 
+													li
+														i.glyphicon.glyphicon-hand-left
+														|  glyphicon glyphicon-hand-left
+													|                 
+													li
+														i.glyphicon.glyphicon-hand-up
+														|  glyphicon glyphicon-hand-up
+													|                 
+													li
+														i.glyphicon.glyphicon-hand-down
+														|  glyphicon glyphicon-hand-down
+													|                 
+													li
+														i.glyphicon.glyphicon-circle-arrow-right
+														|  glyphicon glyphicon-circle-arrow-right
+													|                 
+													li
+														i.a.icon-circle-arrow-left.s.s
+														|  glyphicon glyphicon-circle-arrow-left
+													|                 
+													li
+														i.glyphicon.glyphicon-circle-arrow-up
+														|  glyphicon glyphicon-circle-arrow-up
+													|                 
+													li
+														i.glyphicon.glyphicon-circle-arrow-down
+														|  glyphicon glyphicon-circle-arrow-down
+													|                 
+													li
+														i.glyphicon.glyphicon-globe
+														|  glyphicon glyphicon-globe
+													|                 
+													li
+														i.glyphicon.glyphicon-wrench
+														|  glyphicon glyphicon-wrench
+													|                 
+													li
+														i.glyphicon.glyphicon-tasks
+														|  glyphicon glyphicon-tasks
+													|                 
+													li
+														i.glyphicon.glyphicon-filter
+														|  glyphicon glyphicon-filter
+													|                 
+													li
+														i.glyphicon.glyphicon-briefcase
+														|  glyphicon glyphicon-briefcase
+													|                 
+													li
+														i.glyphicon.glyphicon-fullscreen
+														|  glyphicon glyphicon-fullscreen
+						// /span
+					// /row
+					// content ends
+				// /#content.col-md-0
+			// /fluid-row
+			// Ad, you can remove it
+			.row
+				.col-md-9.col-lg-9.col-xs-9.hidden-xs
+					script(async='', src='//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js')
+					// Charisma Demo 2
+					ins.adsbygoogle(style='display:inline-block;width:728px;height:90px', data-ad-client='ca-pub-5108790028230107', data-ad-slot='3193373905')
+					|             
+					script.
+						(adsbygoogle = window.adsbygoogle || []).push({});
+				|         
+				.col-md-2.col-lg-3.col-sm-12.col-xs-12.donate
+					div
+						small Help development of Charisma
+					|             
+					a.btn.btn-default(href='http://flattr.com/thing/1507720/usmanhalalitcharisma-on-GitHub', target='_blank')
+						i.glyphicon.glyphicon-usd.green
+						|  Donate
+			// Ad ends
+			hr
+			|     
+			#myModal.modal.fade(tabindex='-1', role='dialog', aria-labelledby='myModalLabel', aria-hidden='true')
+				.modal-dialog
+					.modal-content
+						.modal-header
+							button.close(type='button', data-dismiss='modal') ×
+							|                     
+							h3 Settings
+						|                 
+						.modal-body
+							p Here settings can be configured...
+						|                 
+						.modal-footer
+							a.btn.btn-default(href='#', data-dismiss='modal') Close
+							|                     
+							a.btn.btn-primary(href='#', data-dismiss='modal') Save changes
+			|     
+			footer.row
+				p.col-md-9.col-sm-9.col-xs-12.copyright
+					| © 
+					a(href='http://usman.it', target='_blank')
+						| Muhammad
+						| Usman
+					|  2012 - 2014
+				|         
+				p.col-md-3.col-sm-3.col-xs-12.powered-by
+					| Powered by: 
+					a(href='http://usman.it/free-responsive-admin-template') Charisma
+		// /.fluid-container
+		// external javascript
+		script(src='bower_components/bootstrap/dist/js/bootstrap.min.js')
+		// library for cookie management
+		script(src='js/jquery.cookie.js')
+		// calender plugin
+		script(src='bower_components/moment/min/moment.min.js')
+		script(src='bower_components/fullcalendar/dist/fullcalendar.min.js')
+		// data table plugin
+		script(src='js/jquery.dataTables.min.js')
+		// select or dropdown enhancer
+		script(src='bower_components/chosen/chosen.jquery.min.js')
+		// plugin for gallery image view
+		script(src='bower_components/colorbox/jquery.colorbox-min.js')
+		// notification plugin
+		script(src='js/jquery.noty.js')
+		// library for making tables responsive
+		script(src='bower_components/responsive-tables/responsive-tables.js')
+		// tour plugin
+		script(src='bower_components/bootstrap-tour/build/js/bootstrap-tour.min.js')
+		// star rating plugin
+		script(src='js/jquery.raty.min.js')
+		// for iOS style toggle switch
+		script(src='js/jquery.iphone.toggle.js')
+		// autogrowing textarea plugin
+		script(src='js/jquery.autogrow-textarea.js')
+		// multiple file upload plugin
+		script(src='js/jquery.uploadify-3.1.min.js')
+		// history.js for cross-browser state change on ajax
+		script(src='js/jquery.history.js')
+		// application script for Charisma demo
+		script(src='js/charisma.js')

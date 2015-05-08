@@ -1,0 +1,23 @@
+.navbar.navbar-default(role='navigation')
+    .navbar-inner
+        button.navbar-toggle.pull-left.animated.flip(type='button')
+            span.sr-only Toggle navigation
+            span.icon-bar
+            span.icon-bar
+            span.icon-bar
+        a.navbar-brand(href='index.html')
+            img.hidden-xs(alt='sogou Logo', src='img/logo.png')
+            span 搜狗运营平台
+        // user dropdown starts
+        .btn-group.pull-right
+            button.btn.btn-default.dropdown-toggle(data-toggle='dropdown')
+                i.glyphicon.glyphicon-user
+                span.hidden-sm.hidden-xs  admin
+                span.caret
+            ul.dropdown-menu
+                li
+                    a(href='#') 资料
+                li.divider
+                li
+                    a(href='login.html') 退出
+        // user dropdown ends
