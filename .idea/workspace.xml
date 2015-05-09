@@ -2,29 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="d20e5e8e-c9fd-4063-98f7-8e92409a57b6" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/layout/head.jade" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/layout/header.jade" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/home.jade" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/layout/layout.jade" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/layout/sidebar.jade" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/watcherTasks.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/img/favicon.ico" afterPath="$PROJECT_DIR$/img/favicon.ico" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/img/logo.png" afterPath="$PROJECT_DIR$/img/logo.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/blank.html" afterPath="$PROJECT_DIR$/blank.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/calendar.html" afterPath="$PROJECT_DIR$/calendar.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/chart.html" afterPath="$PROJECT_DIR$/chart.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/error.html" afterPath="$PROJECT_DIR$/error.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/form.html" afterPath="$PROJECT_DIR$/form.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/gallery.html" afterPath="$PROJECT_DIR$/gallery.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/grid.html" afterPath="$PROJECT_DIR$/grid.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/icon.html" afterPath="$PROJECT_DIR$/icon.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/index.html" afterPath="$PROJECT_DIR$/index.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/signin.html" afterPath="$PROJECT_DIR$/signin.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/table.html" afterPath="$PROJECT_DIR$/table.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tour.html" afterPath="$PROJECT_DIR$/tour.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/typography.html" afterPath="$PROJECT_DIR$/typography.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ui.html" afterPath="$PROJECT_DIR$/ui.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bower_components/bootstrap/less/variables.less" afterPath="$PROJECT_DIR$/bower_components/bootstrap/less/variables.less" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/home.html" afterPath="$PROJECT_DIR$/home.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/home.jade" afterPath="$PROJECT_DIR$/home.jade" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="sogou.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -78,8 +58,18 @@
       <file leaf-file-name="home.jade" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/home.jade">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.33492824">
-              <caret line="14" column="41" selection-start-line="14" selection-start-column="41" selection-end-line="14" selection-end-column="41" />
+            <state vertical-scroll-proportion="0.6698565">
+              <caret line="28" column="69" selection-start-line="28" selection-start-column="69" selection-end-line="28" selection-end-column="69" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="login.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/login.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="-2.5">
+              <caret line="24" column="77" selection-start-line="24" selection-start-column="77" selection-end-line="24" selection-end-column="77" />
               <folding />
             </state>
           </provider>
@@ -98,8 +88,8 @@
       <file leaf-file-name="table.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/table.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-0.0">
-              <caret line="1" column="0" selection-start-line="1" selection-start-column="0" selection-end-line="1" selection-end-column="0" />
+            <state vertical-scroll-proportion="-3.125">
+              <caret line="5" column="42" selection-start-line="5" selection-start-column="42" selection-end-line="5" selection-end-column="42" />
               <folding>
                 <element signature="n#style#0;n#ins#0;n#div#0;n#div#1;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
               </folding>
@@ -110,11 +100,9 @@
       <file leaf-file-name="table.jade" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/table.jade">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-6.9259257">
-              <caret line="319" column="37" selection-start-line="319" selection-start-column="0" selection-end-line="1068" selection-end-column="0" />
-              <folding>
-                <element signature="n#table#0;n#div#1;n#div#0;n#div#0;n#div#1;n#div#1;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="false" />
-              </folding>
+            <state vertical-scroll-proportion="-0.8148148">
+              <caret line="297" column="24" selection-start-line="297" selection-start-column="24" selection-end-line="314" selection-end-column="44" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -123,20 +111,10 @@
         <entry file="file://$PROJECT_DIR$/home.html">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="-2.5">
-              <caret line="6" column="9" selection-start-line="6" selection-start-column="9" selection-end-line="6" selection-end-column="9" />
+              <caret line="7" column="9" selection-start-line="7" selection-start-column="9" selection-end-line="7" selection-end-column="9" />
               <folding>
-                <marker date="1431106745000" expanded="true" signature="1572:1765" placeholder="{...}" />
+                <marker date="1431109276000" expanded="true" signature="1572:1765" placeholder="{...}" />
               </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="header.jade" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/layout/header.jade">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="1" column="17" selection-start-line="1" selection-start-column="17" selection-end-line="1" selection-end-column="17" />
-              <folding />
             </state>
           </provider>
         </entry>
@@ -460,14 +438,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/login.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-13.125">
-          <caret line="21" column="48" selection-start-line="19" selection-start-column="2" selection-end-line="21" selection-end-column="48" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/css/bootstrap-cerulean.min.css">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="574.84">
@@ -565,29 +535,11 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/layout/layout.jade">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="16" column="24" selection-start-line="16" selection-start-column="24" selection-end-line="16" selection-end-column="24" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/chart.html">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/table.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-0.0">
-          <caret line="1" column="0" selection-start-line="1" selection-start-column="0" selection-end-line="1" selection-end-column="0" />
-          <folding>
-            <element signature="n#style#0;n#ins#0;n#div#0;n#div#1;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -602,27 +554,51 @@
     <entry file="file://$PROJECT_DIR$/home.html">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-2.5">
-          <caret line="6" column="9" selection-start-line="6" selection-start-column="9" selection-end-line="6" selection-end-column="9" />
+          <caret line="7" column="9" selection-start-line="7" selection-start-column="9" selection-end-line="7" selection-end-column="9" />
           <folding>
-            <marker date="1431106745000" expanded="true" signature="1572:1765" placeholder="{...}" />
+            <marker date="1431109276000" expanded="true" signature="1572:1765" placeholder="{...}" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/login.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-2.5">
+          <caret line="24" column="77" selection-start-line="24" selection-start-column="77" selection-end-line="24" selection-end-column="77" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/table.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-3.125">
+          <caret line="5" column="42" selection-start-line="5" selection-start-column="42" selection-end-line="5" selection-end-column="42" />
+          <folding>
+            <element signature="n#style#0;n#ins#0;n#div#0;n#div#1;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/layout/layout.jade">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="16" column="24" selection-start-line="16" selection-start-column="24" selection-end-line="16" selection-end-column="24" />
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/table.jade">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-6.9259257">
-          <caret line="319" column="37" selection-start-line="319" selection-start-column="0" selection-end-line="1068" selection-end-column="0" />
-          <folding>
-            <element signature="n#table#0;n#div#1;n#div#0;n#div#0;n#div#1;n#div#1;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="false" />
-          </folding>
+        <state vertical-scroll-proportion="-0.8148148">
+          <caret line="297" column="24" selection-start-line="297" selection-start-column="24" selection-end-line="314" selection-end-column="44" />
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/home.jade">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.33492824">
-          <caret line="14" column="41" selection-start-line="14" selection-start-column="41" selection-end-line="14" selection-end-column="41" />
+        <state vertical-scroll-proportion="0.6698565">
+          <caret line="28" column="69" selection-start-line="28" selection-start-column="69" selection-end-line="28" selection-end-column="69" />
           <folding />
         </state>
       </provider>
